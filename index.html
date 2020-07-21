@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+
+
+<h1>Chapter 43-48</h1>
+<a href="javascript:void(0)" onclick="alertBox()">Click Me</a>
+<div class="imgbox">
+	<div class="imgdiv">
+	<a href="javascript:void(0)" onclick="alertBox2()"><img src="1.png"></a><br>
+	<span>Mobile1.png</span>
+    </div>
+    <div class="imgdiv">
+	<a href="javascript:void(0)" onclick="alertBox2()"><img src="2.png"></a><br>
+	<span>Mobile2.png</span>
+	</div>
+	<div class="imgdiv">
+	<a href="javascript:void(0)" onclick="alertBox2()"><img src="3.png"></a><br>
+	<span>Mobile3.png</span>
+    </div>
+</div>
+<table style="width:30%; margin: 0 auto;" id="myTable">
+  <tr>
+    <th>Index</th>
+    <th>name</th> 
+    <th>class</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Smith</td>
+    <td>10</td>
+    <td><button onclick="deleteRow(this)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Jackson</td>
+    <td>8</td>
+    <td><button onclick="deleteRow(this)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Doe</td>
+    <td>4</td>
+    <td><button onclick="deleteRow(this)">Delete</button></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Doe</td>
+    <td>6</td>
+    <td><button onclick="deleteRow(this)">Delete</button></td>
+  </tr>
+</table>
+
+
+<!--============================== Counter start ===============================-->
+
+<div class="timer-span">
+   			<span id="min-span">0</span><span>:</span>
+   			<span id="sec-span">0</span><span>:</span>
+   			<span id="msec-span">0</span>
+         </div>
+            <ul>
+               <li><a href="javascript:void(0)" onclick="start()">Start</a></li>
+               <li><a href="javascript:void(0)" onclick="stop()">Stop</a></li>
+               <li><a href="javascript:void(0)" onclick="reset()">Reset</a></li>
+            </ul>
+
+
+<div class="imgbox">
+  <div class="imgdiv">
+  <img src="1.png" id="image1">
+    </div>
+</div>
+
+<h1>Chapter 49-52</h1>
+<div class="signup">
+  <form action="javascript:void(0)">  
+      
+                   Name:     
+      
+                   <input type="text" name="" id="name" value="">     
+      
+                   Password:     
+    
+                   <input type="text" email="" id="pass" value="">     
+    
+                   Email Address:      
+        
+                  <input type="text" name="" id="mail" value="">     
+                  <button onclick="form_submission();">Click Me</button>
+                  <p id="form_para"> </p>
+
+</form> 
+
+  
+</div>
+
+<div class="txt_area">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris</p><button onclick="content()" id="rea_more_btn">Read More</button>
+    <p id="more">nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="student_form">
+  <label>Name</label><br>
+   <input type="text" name="" id="stu_name" value=""><br>
+   <label>Last Name</label><br>
+   <input type="text" name="" id="stu_last_name" value=""><br>
+   <label>Class</label><br>
+   <input type="text" name="" id="stu_class" value=""><br>
+   <label>Department</label><br>
+   <input type="text" name="" id="stu_department" value=""><br>
+   <button id="entry"> Insert Data</button>
+</div>
+
+
+
+<table border="1" id="dataTable">
+       <tr>
+          <th>
+              Name
+          </th>
+          <th>
+              Last Name
+          </th>
+          <th>
+              Class
+          </th>
+          <th>
+              Department
+          </th>
+        </tr>
+       </tr>
+     </table>     
+
+
+<div>
+<h1> DOM </h1>
+<div id="form-content" class="content">
+<label for="first-name">First Name</label>
+<input type="text" id="first-name" />
+<label for="last-name">Last Name</label>
+<input type="text" id="last-name" />
+<label for="email">Email</label>
+<input type="text" id="email" />
+</div>
+<div id="main-content" class="content">
+<p class="render"> First Name : Alex</p>
+<p class="render" id="lastName">Last Name: Bank</p>
+<p class="render"> Email : alexbank@example.com</p>
+<p class="render"> Country : Pakistan </p>
+<p class="render"> contact : +92 300 1234567</p>
+</div>
+</div>
+
+<p>Click the button to get the tag names of the body element's children.</p>
+
+<button onclick="myFunction()">Children</button>
+
+<p id="demo"></p>
+<p id="renders"></p>
+<button onclick="setVal()">Set Value</button>
+<button onclick="node_Type()">Node Type</button><p id="n_type"></p>
+<button onclick="l_node_Type()">Node Type</button><p id="l_type"></p>
+<button onclick="first_child();">First Child</button>
+<button onclick="last_child();">Last Child</button>
+<p id="first_ch"></p>
+<p id="last_ch"></p>
+<button onclick="previous();">previous sibling</button>
+<p id="previous_sibling"></p>
+
+
+<script src="app.js"></script>
+</body>
+</html>
